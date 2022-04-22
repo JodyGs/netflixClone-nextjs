@@ -37,7 +37,7 @@ Props) => {
   loading && null
 
   return (
-    <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
+    <div className={`relative h-screen bg-gradient-to-b lg:h-[140vh]${showModal && '!h-screen overflow-hidden'}`}>
       <Head>
         <title>Netflix | Home</title>
         <link rel="icon" href="/favicon.ico" />
