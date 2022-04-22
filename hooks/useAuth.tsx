@@ -107,7 +107,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 }
 
 // Let's only export the `useAuth` hook instead of the context.
-// We only want to use the hook directly and never the context component.
+// We only want to use the hook directly and never the context comopnent.
 export default function useAuth() {
   return useContext(AuthContext)
 }
