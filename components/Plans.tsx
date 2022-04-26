@@ -14,7 +14,7 @@ interface Props {
 
 function Plans({ products }: Props) {
   const { logout, user } = useAuth()
-  const [selectedPlan, setSelectedPlan] = useState<Product | null>(products[2])
+  const [selectedPlan, setSelectedPlan] = useState<Product>(products[2])
   const [isBillingLoading, setBillingLoading] = useState(false)
 
   const subscribeToPlan = () => {
