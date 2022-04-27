@@ -1,10 +1,10 @@
-import Image from 'next/image'
 import NetflixLogo from '../public/assets/Netflix_2015_logo.svg'
 import { BellIcon, SearchIcon } from '@heroicons/react/solid'
 import Link from 'next/link'
 import profileImg from '../public/assets/profileNetflix.png'
 import { useState, useEffect } from 'react'
 import useAuth from '../hooks/useAuth'
+import BasicMenu from './BasicMenu'
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -38,6 +38,8 @@ function Header() {
             className="cursor-pointer object-contain"
           />
         </Link>
+
+        <BasicMenu />
 
         <ul className="hidden space-x-4 md:flex">
           <li className="headerLink">Home</li>
